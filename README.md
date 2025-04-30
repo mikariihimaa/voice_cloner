@@ -15,6 +15,7 @@ Tämä projekti tarjoaa yksinkertaisen www-pohjaisen käyttöliittymän **ääne
 voice-cloner/
 ├── Dockerfile
 ├── app.py
+├── voice_cloner_webui.py
 ├── templates/
 │   └── index.html
 └── README.md
@@ -43,7 +44,8 @@ Avaa selaimessa: [http://localhost:5002](http://localhost:5002)
 4. Paina **Generate**
 5. Lataa valmis kloonattu puhetiedosto (.wav)
 
-## 🔒 Huomautuksia
+## ⚠️ Huomautuksia
 
-- Malli ei tue tällä hetkellä suomenkielistä äänen kloonausta.
-- Ääninäytteen tulee olla selkeä ja mieluiten 1–10 sekunnin mittainen.
+- 🔇 Malli ei tue tällä hetkellä suomenkielistä äänen kloonausta.
+- 🎧 Ääninäytteen tulee olla selkeä ja mieluiten 1–10 sekunnin mittainen.
+- 🔒 Flask toimii kehityspalvelimena – tuotantokäyttöön suositellaan WSGI-palvelinta (esim. gunicorn)
